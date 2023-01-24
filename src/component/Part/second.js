@@ -1,6 +1,5 @@
 import React from "react";
-import { Card, Container, Row } from "react-bootstrap";
-import { Col } from "react-bootstrap";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
@@ -18,7 +17,7 @@ const Second = () => {
       <section>
         <Row>
           <div className="col">
-            <Card className="m-5" style={{ width: "400px" }}>
+            <Card className="m-5 p-4" style={{ width: "400px", height: "150px" }}>
               <Row>
                 <Col sm={8}>Living Room</Col>
                 <Col sm={3}>
@@ -63,8 +62,8 @@ const Second = () => {
                 src="http://costfinder.consdeployer.com/assets/productselection/bathroombg.jpg"
               />
               <Card.Body>
-                <Container>
-                  <div>
+                <Container className="align-items-center">
+                  <div >
                     <Form.Check.Input />
                     <Form.Check.Label>Enable Living Room</Form.Check.Label>
                   </div>

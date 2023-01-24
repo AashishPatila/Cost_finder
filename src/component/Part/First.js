@@ -3,6 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
+import Second from "./second";
 // import Second from "./Second";
 
 
@@ -212,11 +213,12 @@ const First = () => {
 
             <section>
                 <div className="container">
-                    <button className="btn btn-primary d-flex mx-auto my-4 px-5 py-2">
+                    <button className="btn btn-success d-flex mx-auto my-4 px-5 py-2">
                         Next ->
                     </button>
                 </div>
             </section>
+            <Second/>
 
         </>
     )
