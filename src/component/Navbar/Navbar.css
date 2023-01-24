@@ -1,0 +1,12 @@
+.navbar{
+    background-color: rgb(107, 24, 130);
+}
+.center {
+    display: flex;
+    justify-content: 'center';
+    align-items: 'center';
+}
+
+.assumed{
+    font-size: 100px;
+}
