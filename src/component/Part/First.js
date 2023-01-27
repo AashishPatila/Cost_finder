@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Second from "./second";
+import { Link } from "react-router-dom";
 // import Second from "./Second";
 
 
@@ -64,9 +65,9 @@ const First = () => {
 
                 <div className="container my-5">
                     <div className="row">
-                    <Card style={{ width: "500px" }} className="col mx-3">
+                        <Card style={{ width: "500px" }} className="col mx-3">
                             <Card.Body>
-                             
+
                                 <Card.Subtitle className="mb-2 text-muted">
                                     Start with how many Bedrooms do you have?
                                 </Card.Subtitle>
@@ -99,7 +100,7 @@ const First = () => {
                             </Card.Body>
                         </Card>
 
-                        
+
                     </div>
                 </div>
             </section>
@@ -107,7 +108,7 @@ const First = () => {
             <section>
                 <div className="container">
                     <Card style={{ width: "800px" }} className="mx-auto">
-                        
+
                         <Card.Body>
                             <Card.Subtitle className="mb-2 text-muted text-center display-8 assumed">
                                 Assumed Carpet Area (Sq. ft.)=
@@ -151,7 +152,7 @@ const First = () => {
                         </Row>
                     </Card>
                     <Card className="mx-auto shadow m-4"
-                        style={{width: "600px", height: "200px"  }}>
+                        style={{ width: "600px", height: "200px" }}>
                         <Row>
                             <Col >
                                 <img
@@ -170,7 +171,7 @@ const First = () => {
                         </Row>
                     </Card>
                     <Card className="mx-auto shadow m-4"
-                        style={{ width: "600px", height: "200px"  }}>
+                        style={{ width: "600px", height: "200px" }}>
                         <Row>
                             <Col>
                                 <img
@@ -213,12 +214,11 @@ const First = () => {
 
             <section>
                 <div className="container">
-                    <button className="btn btn-success d-flex mx-auto my-4 px-5 py-2">
-                        Next ->
-                    </button>
+                    <Link to="/second" className="btn btn-success   px-5 py-3 m-3">
+                        Next 
+                    </Link>
                 </div>
             </section>
-            <Second/>
 
         </>
     )
